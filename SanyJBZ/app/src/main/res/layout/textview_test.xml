@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:text="矩形边框"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_marginLeft="50dp"
+    android:layout_marginTop="50dp"
+    android:background="@drawable/button_test" />
+    <TextView
+        android:text="圆角矩形边框"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="50dp"
+        android:background="@drawable/button_test2"/>
+    <TextView
+        android:id="@+id/txtOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:text="你整天说着日了狗日了狗，但是你却没有来，呵呵呵呵呵呵呵呵呵呵~"/>
+    <TextView android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="http://www.baidu.com"
+
+        android:autoLink="all"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawableTop="@drawable/s_1"
+        android:drawableLeft="@drawable/s_1"
+        android:drawableRight="@drawable/s_1"
+        android:drawableBottom="@drawable/s_1"
+        android:drawablePadding="10dp"
+        android:text="张全蛋" />
+    <!--
+    这样设置的drawable并不能自行设置大小，在XML是无法直接设置的； 所以我们需要在Java代码中来进行一个修改！
+    public class MainActivity extends Activity {
+    private TextView txtZQD;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        txtZQD = (TextView) findViewById(R.id.txtZQD);
+        Drawable[] drawable = txtZQD.getCompoundDrawables();
+        // 数组下表0~3,依次是:左上右下
+        drawable[1].setBounds(100, 0, 200, 200);
+        txtZQD.setCompoundDrawables(drawable[0], drawable[1], drawable[2],
+                drawable[3]);
+    }
+}
+    -->
+
+
+</LinearLayout>

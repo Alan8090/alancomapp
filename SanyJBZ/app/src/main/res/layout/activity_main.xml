@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
+
     android:background="@drawable/back" >
     <TextView
         android:id="@+id/txtOne"
@@ -29,7 +30,11 @@
     android:layout_width="500dp"
     android:layout_height="50dp"
     android:layout_marginTop="200dp"/>
-
+<GridLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="400dp"
+    android:columnCount="3">
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -37,6 +42,12 @@
         android:id="@+id/btn_toast"
         android:layout_gravity="center"
         />
-
-
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="对话框"
+        android:id="@+id/btn_alterdialog"
+        android:layout_gravity="center"
+        />
+</GridLayout>
 </FrameLayout>

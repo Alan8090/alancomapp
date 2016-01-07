@@ -9,9 +9,13 @@ import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.app.Activity;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.sanyjbz.alan8090.sanyjbz.Alan_Control.midToast;
 
 public class MainActivity extends AppCompatActivity {
 /*
@@ -43,7 +47,15 @@ public class MainActivity extends AppCompatActivity {
         frame.addView(mezi);
 */
         TextView tv=(TextView)findViewById(R.id.txt1);
+        Button btn=(Button)findViewById(R.id.btn_toast);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                midToast.midToast("abc", Toast.LENGTH_LONG,MainActivity.this);
+                //midToast.showToast(MainActivity.this,"abc");
+            }
+        });
 
 
     }

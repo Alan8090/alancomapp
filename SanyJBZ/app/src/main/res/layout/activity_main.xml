@@ -17,24 +17,13 @@
         android:focusable="true"
         android:focusableInTouchMode="true"
         android:text="你整天说 但是你却没有来，呵呵呵呵呵呵呵呵呵呵~"/>
-    <TextView
-        android:id="@+id/txt1"
-        android:layout_margin="100dp"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="http://www.baidu.com"
 
-        android:autoLink="all"
-        />
-<com.sanyjbz.alan8090.sanyjbz.EditTextWithDel
-    android:layout_width="500dp"
-    android:layout_height="50dp"
-    android:layout_marginTop="200dp"/>
+
 <GridLayout
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginTop="400dp"
-    android:columnCount="3">
+    android:columnCount="2">
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -48,6 +37,35 @@
         android:text="对话框"
         android:id="@+id/btn_alterdialog"
         android:layout_gravity="center"
+        />
+    <Button android:id="@+id/btn_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="普通圆形进度条对话框"
+        >
+
+    </Button>
+    <Button android:id="@+id/btn_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="定义条形对话框，但不带动态更新"
+        >
+
+    </Button>
+    <Button android:id="@+id/btn_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="带进度更新条形进度条对话框"
+        >
+
+
+    </Button>
+    <com.sanyjbz.alan8090.sanyjbz.Alan_Control.MyButton
+        android:id="@+id/btn_mybtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="回调自定义按钮"
         />
 </GridLayout>
 </FrameLayout>
